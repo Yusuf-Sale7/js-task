@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <haed>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" type="image/icon" href="imgs/favicon.png"/>
+    <!--IE Compatibility Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!--First Mobile Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Valinteca Task</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"/>
+    <link rel="stylesheet" href="css/style.css"/>
+  </haed>
+  <body>
+    <!-- App Header -->
+    <header>
+      <h3>JS Task</h3>
+      <div class="cart">
+        <button class="toggle-dd" onclick="toggleDd()">
+          <span class="items-count" id="items-count">3</span>
+          <span class="material-symbols-rounded">
+            shopping_cart
+          </span>
+        </button>
+        <ul class="dropdown" id="dropdown" style="display: none">
+          <li class="product">
+            <img src="imgs/products/1.jpg" alt="Watch image"/>
+            <h3>Watch</h3>
+            <p>3000 <span>LE</span></p>
+            <div class="actions">
+              <button class="btn-danger">
+                <span class="material-symbols-rounded">
+                  remove
+                </span>
+                Remove
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- App Content -->
+    <main>
+      <div class="products" id="products">
+        <div>
+          <div class="product">
+            <img src="imgs/products/1.jpg" alt="Watch image"/>
+            <h3>Watch</h3>
+            <p>3000 <span>LE</span></p>
+            <div class="actions">
+              <button class="btn-primary">
+                <span class="material-symbols-rounded">
+                  add
+                </span>
+                Add to cart
+              </button>
+              <button class="btn-danger">
+                <span class="material-symbols-rounded">
+                  remove
+                </span>
+                Remove
+              </button>
+              <button class="btn-secondary" onclick="viewProduct()">
+                <span class="material-symbols-rounded">
+                  preview
+                </span>
+                Quick view
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- App Footer -->
+    <footer>
+      Made With 🧡 & JavaScript
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="modal-body" id="modal-body">
+        </div>
+
+        <div class="modal-actions">
+          <button class="close btn-danger" onclick="closeModal()">
+            <span class="material-symbols-rounded">
+              close
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
